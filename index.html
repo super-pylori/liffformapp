@@ -137,7 +137,7 @@
                 const shi  = $('input[name="shi"]').val();
                 const tyo = $('input[name="tyo"]').val();
                 const tatemono = $('input[name="tatemono"]').val();
-                const msg = `${name}\n${phone}\n${yubin}\n${to}\n${shi}\n${tyo}\n${tatemono}`;
+                const msg = `${name}\n${phone}\n${'〒'+ yubin + ' '}${to}${shi}${tyo}${tatemono}`;
                 sendText(msg);
                 return false;
             });
