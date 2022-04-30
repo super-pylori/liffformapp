@@ -26,7 +26,7 @@
         </div>
         <p class="mt-3">都道府県</p>
         <div>
-            <select class="p-region" name="to" autocomplete="shipping address-level1" required>
+            <select class="form-control w-100 mt-1 p-region" name="to" autocomplete="shipping address-level1" required>
                 <option value="" selected>(選択)</option>
                 <option value="北海道">北海道</option>
                 <option value="青森県">青森県</option>
@@ -137,7 +137,7 @@
                 const shi  = $('input[name="shi"]').val();
                 const tyo = $('input[name="tyo"]').val();
                 const tatemono = $('input[name="tatemono"]').val();
-                const msg = `${name}\n${yubin}\n${to}\n${shi}\n${tyo}\n${tatemono}`;
+                const msg = `${name}\n${phone}\n${yubin}\n${to}\n${shi}\n${tyo}\n${tatemono}`;
                 sendText(msg);
                 return false;
             });
