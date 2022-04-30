@@ -137,7 +137,7 @@
                 const shi  = $('input[name="shi"]').val();
                 const tyo = $('input[name="tyo"]').val();
                 const tatemono = $('input[name="tatemono"]').val();
-                const msg = `${'ユーザ情報を登録する'}\n${name}\n${phone}\n${'〒'+ yubin + ' '}${to}${shi}${tyo}${tatemono}`;
+                const msg = `${'ユーザ情報を登録する'}\n${name}\n${phone}\n${'〒'+ yubin + ' '}\n${to}${shi}${tyo}${tatemono}`;
                 sendText(msg);
                 return false;
             });
